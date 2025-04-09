@@ -54,7 +54,7 @@ export default function Home() {
 
         <section className="habilidades">
           <h2>Habilidades</h2>
-          <ul className="lista-habilidades">
+          <ul>
             <li>
               <strong>Linguagens:</strong> Python, Java, C, C++
             </li>

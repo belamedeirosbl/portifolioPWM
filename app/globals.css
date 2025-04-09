@@ -1,4 +1,4 @@
-/* Reset e configurações básicas */
+/* base */
 * {
   margin: 0;
   padding: 0;
@@ -12,43 +12,13 @@ body {
   line-height: 1.6;
 }
 
-/* Layout principal */
+/*estrutura geral*/
 main {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Cabeçalho */
-header {
-  background-color: #1f2937; /* azul-acinzentado escuro */
-  color: #ffffff;
-  text-align: center;
-  padding: 2rem 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  font-size: 2.25rem;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-/* Rodapé */
-footer {
-  background-color: #1f2937;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-}
-
-/* Seções */
 section {
   margin-bottom: 2rem;
 }
@@ -61,14 +31,19 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-/* Texto */
+/*textos*/
 p,
 li {
   font-size: 1rem;
-  color: #374151; /* cinza médio */
+  color: #374151;
 }
 
-/* Listas */
+header p,
+footer p {
+  color: #f3f4f6;
+}
+
+/* lista*/
 ul {
   list-style: none;
   padding-left: 0;
@@ -78,31 +53,37 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
-/* Links */
+/*links*/
 a {
-  color: #2563eb; /* azul padrão */
+  color: #2563eb;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #1e40af; /* azul mais escuro no hover */
+  color: #1e40af;
 }
 
-header p {
-  color: #f3f4f6; /* branco suave */
-}
-footer p {
-  color: #f3f4f6; /* branco suave */
-}
-
-.lista-habilidades {
-  padding-left: 1.2rem;
+/*cocao*/
+header {
+  background-color: #1f2937;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.lista-habilidades li {
-  position: relative;
-  margin-bottom: 0.75rem;
-  padding-left: 1.2rem;
-  line-height: 1.5;
+header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/*pe */
+footer {
+  background-color: #1f2937;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
 }
