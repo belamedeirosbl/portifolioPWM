@@ -46,13 +46,12 @@ export default function Home() {
           <ul>
             <li>
               <strong>Workshop de Maratona Da Computação: </strong>Evento de
-              duas semanas voltado para alunos iniciantes (1º e 2º períodos) de
-              Ciências da Computação. O workshop tratou desde conceitos básicos
-              até algoritmos mais avançados. O evento foi organizado pelos
-              próprios alunos da maratona para compartilhar conhecimento e
-              incentivar o interesse na lógica computacional, o conhecimento foi
-              passado por meio de aulas de cada integrante da equipe e de
-              competições entre os alunos que estavam participando do workshop.
+              duas semanas voltado organizado pelos próprios alunos da maratona
+              para alunos iniciantes (1º e 2º períodos) de Ciências da
+              Computação. O workshop tratou desde conceitos básicos até
+              algoritmos mais avançados, o evento contou com aulas de cada
+              integrante da equipe e competições entre os alunos que estavam
+              participando do workshop.
             </li>
             <li>
               <strong>Apoio Local: </strong>Protótipo de aplicativo criado para
@@ -85,6 +84,21 @@ export default function Home() {
               problema de memória a cuidar melhor das plantas.{" "}
               <a
                 href="https://github.com/juliasvilar/Hortinha_Inclusiva"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (clique aqui para ver o projeto!)
+              </a>
+            </li>
+            <li>
+              <strong>Quiz de ciências da computação: </strong> O projeto é um
+              quiz voltado para alunos de Ciências da Computação, do 1º ao 5º
+              período, com perguntas sobre os conteúdos das disciplinas. A ideia
+              é usar a gamificação para tornar o aprendizado mais divertido e
+              motivador, incentivando os alunos a estudarem e fixarem melhor o
+              conhecimento de forma leve e interativa.{" "}
+              <a
+                href="https://projeto-web-mobile-seven.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
