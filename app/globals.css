@@ -1,4 +1,3 @@
-/* base */
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +6,11 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9fafb; /* cinza claro neutro */
-  color: #1f2937; /* cinza escuro */
+  background-color: #f9fafb;
+  color: #1f2937;
   line-height: 1.6;
 }
 
-/*estrutura geral*/
 main {
   max-width: 800px;
   margin: 2rem auto;
@@ -26,12 +24,11 @@ section {
 h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  color: #111827; /* quase preto */
+  color: #111827;
   border-bottom: 2px solid #e5e7eb;
   padding-bottom: 0.5rem;
 }
 
-/*textos*/
 p,
 li {
   font-size: 1rem;
@@ -43,7 +40,6 @@ footer p {
   color: #f3f4f6;
 }
 
-/* lista*/
 ul {
   list-style: none;
   padding-left: 0;
@@ -53,7 +49,6 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
-/*links*/
 a {
   color: #2563eb;
   text-decoration: none;
@@ -64,7 +59,6 @@ a:hover {
   color: #1e40af;
 }
 
-/*cocao*/
 header {
   background-color: #1f2937;
   color: #ffffff;
@@ -78,7 +72,6 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/*pe */
 footer {
   background-color: #1f2937;
   color: #ffffff;

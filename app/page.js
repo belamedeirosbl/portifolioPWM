@@ -7,21 +7,35 @@ export default function Home() {
       <Header />
 
       <main>
-        <section className="bio">
-          <h2>Sobre Mim</h2>
-          <p>
-            Sou estudante de Ciência da Computação na Universidade Católica de
-            Pernambuco, estou cursando agora o quinto período. Gosto muito de
-            programar e de explorar novos algoritmos e sempre descobrir a melhor
-            solução para cada problema! Atualmente, participo de uma pesquisa
-            PIBIC que foca na classificação de câncer de mama através de
-            processamento de imagens e aplicação dos dados em redes neurais.
-            Também faço parte da Maratona de Programação, participando
-            anualmente de competições e praticando semanalmente para melhorar
-            minhas habilidades. Estou sempre em busca de oportunidades para
-            evoluir tecnicamente e aprender novas tecnologias.
-          </p>
-        </section>
+        <div style={{ display: "flex", gap: "20px" }}>
+          <img
+            src="/midias/fotoCurriculo.JPG"
+            alt="Foto de Isabela Medeiros"
+            style={{
+              width: "300px",
+              height: "315px",
+              borderRadius: "10%",
+              objectFit: "cover",
+            }}
+          />
+
+          <section className="bio">
+            <h2>Sobre Mim</h2>
+            <p>
+              Sou estudante de Ciência da Computação na Universidade Católica de
+              Pernambuco, estou cursando agora o quinto período. Gosto muito de
+              programar, de explorar novos algoritmos e sempre descobrir a
+              melhor solução para cada problema! Atualmente, participo de uma
+              pesquisa PIBIC que foca na classificação de câncer de mama através
+              de processamento de imagens e aplicação dos dados em redes
+              neurais. Também faço parte da Maratona de Programação,
+              participando anualmente de competições e praticando semanalmente
+              para melhorar minhas habilidades. Estou sempre em busca de
+              oportunidades para evoluir tecnicamente e aprender novas
+              tecnologias.
+            </p>
+          </section>
+        </div>
 
         <section className="contato">
           <h2>Contato</h2>
