@@ -37,6 +37,84 @@ export default function Home() {
           </section>
         </div>
 
+        <section className="projetos">
+          <h2>PROJETOS</h2>
+          <p>
+            Projetos desenvolvidos na Universidade Católica de Pernambuco que
+            ajudaram a aprimorar as minhas habilidades:
+          </p>
+          <ul>
+            <li>
+              <strong>Workshop de Maratona Da Computação: </strong>Evento de
+              duas semanas voltado para alunos iniciantes (1º e 2º períodos) de
+              Ciências da Computação. O workshop tratou desde conceitos básicos
+              até algoritmos mais avançados. O evento foi organizado pelos
+              próprios alunos da maratona para compartilhar conhecimento e
+              incentivar o interesse na lógica computacional, o conhecimento foi
+              passado por meio de aulas de cada integrante da equipe e de
+              competições entre os alunos que estavam participando do workshop.
+            </li>
+            <li>
+              <strong>Apoio Local: </strong>Protótipo de aplicativo criado para
+              reduzir o desperdício de alimentos, tinha como objetivo também
+              promover doações por meio de um mapa onde pessoas ou empresas
+              poderiam sinalizar quando tivesse sobras disponíveis para resgate,
+              assim, ajudando também pessoas em situação de fome.
+            </li>
+            <li>
+              <strong>
+                Biblioteca digital para alunos de Ciências da Computação:{" "}
+              </strong>
+              Prototipo desenvolvido para tornar a busca e acesso ao
+              conhecimento mais fácil e direto. Tinha como obetivo
+              disponibilizar os principais livros para estudantes de ciências da
+              computação.{" "}
+              <a
+                href="https://github.com/Dudubraga/Projeto-Biblioteca"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (clique aqui para ver o projeto!)
+              </a>
+            </li>
+            <li>
+              <strong>Hortinha inclusiva: </strong>Projeto desenvolvido para a
+              cadeira de Robótica Inclusiva. Era um sistema que avisava, com
+              base na umidade da planta, quando era hora de regar. O objetivo
+              era ajudar pessoas com deficiência visual, idosos ou quem tem
+              problema de memória a cuidar melhor das plantas.{" "}
+              <a
+                href="https://github.com/juliasvilar/Hortinha_Inclusiva"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (clique aqui para ver o projeto!)
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section className="habilidades">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>
+              <strong>Linguagens:</strong> Python, Java, C, C++
+            </li>
+            <li>
+              <strong>Web:</strong> HTML, CSS, JavaScript, React
+            </li>
+            <li>
+              <strong>Banco de Dados:</strong> MySQL, SQLite
+            </li>
+            <li>
+              <strong>Ferramentas:</strong> Git, GitHub, Figma
+            </li>
+            <li>
+              <strong>Frameworks:</strong> Django, Next
+            </li>
+          </ul>
+        </section>
+
         <section className="contato">
           <h2>Contato</h2>
           <ul>
@@ -62,27 +140,6 @@ export default function Home() {
               <a href="mailto:belamedeirosbl@gmail.com">
                 belamedeirosbl@gmail.com
               </a>
-            </li>
-          </ul>
-        </section>
-
-        <section className="habilidades">
-          <h2>Habilidades</h2>
-          <ul>
-            <li>
-              <strong>Linguagens:</strong> Python, Java, C, C++
-            </li>
-            <li>
-              <strong>Web:</strong> HTML, CSS, JavaScript, React
-            </li>
-            <li>
-              <strong>Banco de Dados:</strong> MySQL, SQLite
-            </li>
-            <li>
-              <strong>Ferramentas:</strong> Git, GitHub, Figma
-            </li>
-            <li>
-              <strong>Frameworks:</strong> Django, Next
             </li>
           </ul>
         </section>
