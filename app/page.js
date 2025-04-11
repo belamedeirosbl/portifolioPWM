@@ -42,6 +42,12 @@ export default function Home() {
         >
           Contato
         </a>
+        <a
+          href="/jogo-senha"
+          style={{ margin: "0 1rem", color: "#ffffff", textDecoration: "none" }}
+        >
+          Jogo da Senha
+        </a>
       </nav>
 
       <main>
