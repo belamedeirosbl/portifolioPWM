@@ -6,6 +6,44 @@ export default function Home() {
     <>
       <Header />
 
+      <nav
+        style={{
+          position: "sticky",
+          top: 0,
+          backgroundColor: "#1f2937",
+          color: "#ffffff",
+          padding: "1rem",
+          textAlign: "center",
+          zIndex: 1000,
+          boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+        }}
+      >
+        <a
+          href="#sobre-mim"
+          style={{ margin: "0 1rem", color: "#ffffff", textDecoration: "none" }}
+        >
+          Sobre Mim
+        </a>
+        <a
+          href="#projetos"
+          style={{ margin: "0 1rem", color: "#ffffff", textDecoration: "none" }}
+        >
+          Projetos
+        </a>
+        <a
+          href="#habilidades"
+          style={{ margin: "0 1rem", color: "#ffffff", textDecoration: "none" }}
+        >
+          Habilidades
+        </a>
+        <a
+          href="#contato"
+          style={{ margin: "0 1rem", color: "#ffffff", textDecoration: "none" }}
+        >
+          Contato
+        </a>
+      </nav>
+
       <main>
         <div style={{ display: "flex", gap: "20px" }}>
           <img
@@ -19,7 +57,7 @@ export default function Home() {
             }}
           />
 
-          <section className="bio">
+          <section id="sobre-mim" className="bio">
             <h2>Sobre Mim</h2>
             <p>
               Sou estudante de Ciência da Computação na Universidade Católica de
@@ -37,7 +75,7 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="projetos">
+        <section id="projetos" className="projetos">
           <h2>PROJETOS</h2>
           <p>
             Projetos desenvolvidos na Universidade Católica de Pernambuco que
@@ -108,7 +146,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="habilidades">
+        <section id="habilidades" className="habilidades">
           <h2>Habilidades</h2>
           <ul>
             <li>
@@ -129,7 +167,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="contato">
+        <section id="contato" className="contato">
           <h2>Contato</h2>
           <ul>
             <li>

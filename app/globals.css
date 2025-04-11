@@ -19,6 +19,7 @@ main {
 
 section {
   margin-bottom: 2rem;
+  scroll-margin-top: 80px; /* Ajuste o valor conforme a altura da barra de navegação */
 }
 
 h2 {
