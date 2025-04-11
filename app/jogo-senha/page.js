@@ -1,11 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import { useRouter } from "next/navigation";
+import styles from "./jogo-senha.module.css";
 
 export default function JogoSenha() {
   const [secretNumber, setSecretNumber] = useState(generateSecretNumber());
   const [guess, setGuess] = useState("");
   const [feedback, setFeedback] = useState([]);
+  const router = useRouter();
 
   function generateSecretNumber() {
     const digits = [];
@@ -35,7 +40,7 @@ export default function JogoSenha() {
       }
     }
 
-    setFeedback([{ guess, bulls, cows }, ...feedback]); // Adiciona a nova tentativa no topo
+    setFeedback([{ guess, bulls, cows }, ...feedback]);
     setGuess("");
 
     if (bulls === 4) {
@@ -55,69 +60,61 @@ export default function JogoSenha() {
   }
 
   return (
-    <div
-      style={{ maxWidth: "400px", margin: "2rem auto", textAlign: "center" }}
-    >
-      <h1>Jogo Touros e Vacas</h1>
-      <p>Tente adivinhar o número secreto de 4 dígitos únicos.</p>
-      <div style={{ marginBottom: "1rem" }}>
-        <input
-          type="text"
-          value={guess}
-          onChange={(e) => setGuess(e.target.value)}
-          maxLength={4}
-          placeholder="Digite sua tentativa"
-          style={{
-            padding: "0.5rem",
-            fontSize: "1rem",
-            width: "70%",
-            marginRight: "0.5rem",
-          }}
-        />
-        <button onClick={handleGuess} style={{ padding: "0.5rem 1rem" }}>
-          Adivinhar
-        </button>
-      </div>
-      <div style={{ marginBottom: "1rem" }}>
-        <button onClick={resetGame} style={{ padding: "0.5rem 1rem" }}>
-          Reiniciar
-        </button>
-        <button
-          onClick={showSecretNumber}
-          style={{ padding: "0.5rem 1rem", marginLeft: "0.5rem" }}
-        >
-          Mostrar Resposta
-        </button>
-      </div>
-      <h2>Tentativas</h2>
-      <ul
-        style={{
-          maxHeight: "200px",
-          overflowY: "auto",
-          listStyle: "none",
-          padding: "0",
-          border: "1px solid #ccc",
-          borderRadius: "4px",
-          backgroundColor: "#f9f9f9",
-        }}
-      >
-        {feedback.map((entry, index) => (
-          <li
-            key={index}
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              padding: "0.5rem",
-              borderBottom: "1px solid #eee",
-            }}
+    <>
+      <Header />
+      <div className={styles.container}>
+        <h1 className={styles.title}>Jogo Touros e Vacas</h1>
+        <p className={styles.subtitle}>
+          Tente adivinhar o número secreto de 4 dígitos únicos.
+        </p>
+        <div>
+          <input
+            type="text"
+            value={guess}
+            onChange={(e) => setGuess(e.target.value)}
+            maxLength={4}
+            placeholder="Digite sua tentativa"
+            className={styles.input}
+          />
+          <button onClick={handleGuess} className={styles.button}>
+            Adivinhar
+          </button>
+        </div>
+        <div style={{ marginTop: "1rem" }}>
+          <button onClick={resetGame} className={styles.button}>
+            Reiniciar
+          </button>
+          <button
+            onClick={showSecretNumber}
+            className={`${styles.button} ${styles.secondaryButton}`}
+            style={{ marginLeft: "0.5rem" }}
           >
-            <span>{entry.guess}</span>
-            <span>
-              {entry.bulls} Touros, {entry.cows} Vacas
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>
+            Mostrar Resposta
+          </button>
+        </div>
+        <div style={{ marginTop: "1rem" }}>
+          <button
+            onClick={() => router.push("/")}
+            className={`${styles.button} ${styles.secondaryButton}`}
+          >
+            Voltar para a Página Principal
+          </button>
+        </div>
+        <h2 className={styles.title} style={{ fontSize: "1.5rem" }}>
+          Tentativas
+        </h2>
+        <ul className={styles.list}>
+          {feedback.map((entry, index) => (
+            <li key={index} className={styles.listItem}>
+              <span>{entry.guess}</span>
+              <span>
+                {entry.bulls} Touros, {entry.cows} Vacas
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Footer />
+    </>
   );
 }
