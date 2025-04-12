@@ -114,7 +114,6 @@ export default function JogoSenha() {
           ))}
         </ul>
       </div>
-      <Footer />
     </>
   );
 }
